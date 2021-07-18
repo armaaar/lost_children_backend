@@ -9,6 +9,7 @@ django-environ = "*"
 
 [dev-packages]
 pylint = "*"
+pylint-django = "*"
 
 [requires]
 python_version = "3.9"

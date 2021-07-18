@@ -88,6 +88,14 @@ python manage.py createsuperuser
 python manage.py check
 ```
 
+### Other useful commands
+
+- To lint your code:
+
+```bash
+find . -type f -name "*.py" | xargs pylint
+```
+
 ## Troubleshooting
 
 Most of the problems you might face will mostly be because you are not using the right virual environment or that you didn't install the required packages. Make sure your IDE using the correct interpretter from your venv. You can get the path to the venv interpretter using:
