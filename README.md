@@ -105,3 +105,5 @@ pipenv --py
 ```
 
 ## TODO list
+
+- Add [tests](https://docs.djangoproject.com/en/3.2/topics/testing/)

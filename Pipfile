@@ -6,6 +6,9 @@ name = "pypi"
 [packages]
 Django = "==3.2.5"
 django-environ = "*"
+cmake = "*"
+face-recognition = "*"
+pillow = "*"
 
 [dev-packages]
 pylint = "*"

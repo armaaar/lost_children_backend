@@ -7,6 +7,9 @@ load-plugins=
 
 django-settings-module=lost_children_backend.settings
 
+ignore=migrations
+
 [MESSAGES CONTROL]
 disable=
-    import-outside-toplevel
+    import-outside-toplevel,
+    missing-module-docstring
