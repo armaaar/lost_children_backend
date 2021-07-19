@@ -7,5 +7,12 @@ def kid_image_update_path(instance, filename):
 
 class KidImage(models.Model):
     """Model for children images"""
+
+    STATES = (
+        ('lost', 'Lost'),
+        ('search', 'Search'),
+    )
+
     image = models.ImageField(upload_to = kid_image_update_path)
     date_time = models.DateTimeField('date the image was uploaded in')
+    state = models.CharField(max_length = 10, choices=STATES, default=STATES[0][0])

@@ -9,6 +9,9 @@ django-environ = "*"
 cmake = "*"
 face-recognition = "*"
 pillow = "*"
+django-cors-headers = "*"
+opencv-python = "*"
+uuid = "*"
 
 [dev-packages]
 pylint = "*"
