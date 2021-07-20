@@ -12,6 +12,7 @@ pillow = "*"
 django-cors-headers = "*"
 opencv-python = "*"
 uuid = "*"
+numpy = "*"
 
 [dev-packages]
 pylint = "*"

@@ -12,4 +12,5 @@ ignore=migrations
 [MESSAGES CONTROL]
 disable=
     import-outside-toplevel,
-    missing-module-docstring
+    missing-module-docstring,
+    consider-using-enumerate
