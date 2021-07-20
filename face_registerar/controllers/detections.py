@@ -19,6 +19,8 @@ class DetectionView(View):
             date_time = timezone.now(),
             state = data['state'],
             image = base64_to_memory_image(data['image']),
+            latitude = data['location']['latitude'],
+            longitude = data['location']['longitude'],
         )
 
         # Get face encodings
