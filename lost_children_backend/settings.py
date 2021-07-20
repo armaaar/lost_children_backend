@@ -41,6 +41,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'face_registerar.apps.FaceRegistrarConfig',
+    'health.apps.HealthConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
