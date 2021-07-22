@@ -9,6 +9,8 @@ django-settings-module=lost_children_backend.settings
 
 ignore=migrations
 
+generated-members=cv2.*
+
 [MESSAGES CONTROL]
 disable=
     import-outside-toplevel,
