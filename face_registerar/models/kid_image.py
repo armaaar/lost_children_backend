@@ -18,3 +18,11 @@ class KidImage(models.Model):
     state = models.CharField(max_length = 10, choices=STATES, default=STATES[0][0])
     latitude = models.FloatField(default=None)
     longitude = models.FloatField(default=None)
+
+    def delete(self, *args, **kwargs):
+        # You have to prepare what you need before delete the model
+        storage, path = self.image.storage, self.image.path
+        # Delete the model before the file
+        super(KidImage, self).delete(*args, **kwargs)
+        # Delete the file after the model
+        storage.delete(path)

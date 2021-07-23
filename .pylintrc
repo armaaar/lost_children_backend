@@ -15,4 +15,5 @@ generated-members=cv2.*
 disable=
     import-outside-toplevel,
     missing-module-docstring,
-    consider-using-enumerate
+    consider-using-enumerate,
+    super-with-arguments

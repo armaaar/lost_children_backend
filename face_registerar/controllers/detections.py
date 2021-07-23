@@ -53,6 +53,7 @@ class DetectionView(View):
 
         # Send response
         return JsonResponse({
+            'imageId': kid_image.id,
             'image': cv2_to_base64(marked_image),
             'handlers': handlers
         })

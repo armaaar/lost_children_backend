@@ -93,7 +93,7 @@ python manage.py check
 - To lint your code:
 
 ```bash
-find . -type f -name "*.py" | xargs pylint
+find . -type f -name "*.py" -not -path "**/migrations/*" | xargs pylint
 ```
 
 ## Troubleshooting

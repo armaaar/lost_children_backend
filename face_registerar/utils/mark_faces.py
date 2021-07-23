@@ -41,7 +41,10 @@ def mark_faces(image: ndarray, faces: list[KidFace]) -> list[ndarray, dict]:
         cv2.putText(
             marked_image,
             handler,
-            (x_1 + _mark_settings['padding'], y_2  + _mark_settings['label_height'] - _mark_settings['padding']),
+            (
+                x_1 + _mark_settings['padding'],
+                y_2  + _mark_settings['label_height'] - _mark_settings['padding']
+            ),
             cv2.FONT_HERSHEY_COMPLEX,
             _mark_settings['font_scale'],
             _mark_settings['text_color'],

@@ -4,6 +4,7 @@ APP_HANDLER = 'FR'
 
 ERRORS: dict = {
     'no_face': 'No faces could be detected',
+    'no_image_by_id': 'Requested image can\'t be found'
 }
 
 def err(err_name: str) -> str:
