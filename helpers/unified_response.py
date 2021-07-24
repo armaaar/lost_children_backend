@@ -2,7 +2,7 @@ import json
 from django.http import HttpResponseBadRequest, JsonResponse
 
 def unified_response(
-    message_name: str = 'unknown',
+    message_name: str = None,
     messages: dict = None,
     handler: str = 'GNR',
     is_error: bool = False,

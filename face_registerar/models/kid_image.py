@@ -1,4 +1,10 @@
+from enum import Enum
 from django.db import models
+
+class KidImageState(Enum):
+    """Kid image states"""
+    LOST = 'lost'
+    SEARCH = 'search'
 
 def kid_image_update_path(instance, filename):
     """Return image upload path"""
@@ -9,8 +15,8 @@ class KidImage(models.Model):
     """Model for children images"""
 
     STATES = (
-        ('lost', 'Lost'),
-        ('search', 'Search'),
+        (KidImageState.LOST.value, 'Lost'),
+        (KidImageState.SEARCH.value, 'Search'),
     )
 
     image = models.ImageField(upload_to = kid_image_update_path)

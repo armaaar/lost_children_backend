@@ -14,7 +14,7 @@ class CleanUndetectedFacesCronJob(CronJobBase):
         """Cron job Method"""
         # get unconfirmed faces
         try:
-            unconfirmed_faces: KidFace = KidFace.objects.filter(is_confirmed=False)
+            unconfirmed_faces: list[KidFace] = KidFace.objects.filter(is_confirmed=False)
         except KidFace.DoesNotExist:
             return
 
