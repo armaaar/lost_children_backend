@@ -76,6 +76,12 @@ python manage.py makemigrations module_name
 python manage.py migrate
 ```
 
+- Run cron jobs:
+
+```bash
+python manage.py runcrons
+```
+
 - Create a superuser for admin interface:
 
 ```bash
@@ -103,6 +109,10 @@ Most of the problems you might face will mostly be because you are not using the
 ```bash
 pipenv --py
 ```
+
+## Setting up cron jobs
+
+This project uses [`django-cron`](https://django-cron.readthedocs.io/en/latest/) to setup cron jobs. For more info about how to setup a cron job and what is the available commands, refer to their [installation doc](https://django-cron.readthedocs.io/en/latest/installation.html)
 
 ## TODO list
 
